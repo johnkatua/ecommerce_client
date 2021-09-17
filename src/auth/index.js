@@ -28,6 +28,7 @@ export const signin = (user) => {
     body: JSON.stringify(user)
   })
   .then(res => {
+    console.log(res);
     return res.json()
   })
   .catch(err => {
