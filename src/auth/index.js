@@ -28,7 +28,6 @@ export const signin = (user) => {
     body: JSON.stringify(user)
   })
   .then(res => {
-    console.log(res);
     return res.json()
   })
   .catch(err => {
@@ -37,6 +36,7 @@ export const signin = (user) => {
 };
 
 export const authenticate = (data, next) => {
+  console.log(data);
   if (typeof window !== 'undefined') {
     localStorage.setItem('jwt', JSON.stringify(data));
     next();
