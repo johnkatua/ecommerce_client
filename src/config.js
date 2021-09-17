@@ -1,2 +1,2 @@
-export const API = process.env.REACT_APP_API_URL;
+export const API = 'https://quiet-forest-42799.herokuapp.com/api';
 console.log(API);
